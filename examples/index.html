@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>yo yeah test</title>
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <x-message id="message" message="Hey there!"></x-message>
+    <form id="form">
+      <input id="message-input"></input>
+      <button type="submit" id="message-button">set message</button>
+    </form>
+
+    <br><br>
+
+    <x-wrapper>
+      <ul>
+        <li>wonderful</li>
+        <li>wonderful</li>
+        <li>content</li>
+      </ul>
+    </x-wrapper>
+
+    <script>
+      var messageEl = document.getElementById('message')
+      var messageInput = document.getElementById('message-input')
+      var form = document.getElementById('form')
+      form.onsubmit = function(e) {
+        e.preventDefault()
+        document.getElementById('message').setAttribute('message', messageInput.value)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "yo-yeah-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jesse Kriss <jesse@jklabs.net>",
+  "license": "ISC",
+  "scripts": {
+    "build": "browserify index.js -o bundle.js",
+    "watch": "watchify index.js -o bundle.js"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "yo-yo": "^1.0.1"
+  }
+}
